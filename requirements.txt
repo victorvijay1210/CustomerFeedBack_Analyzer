@@ -1,0 +1,7 @@
+fastapi[standard]
+streamlit
+google-genai
+pydantic
+python-dotenv
+sqlalchemy
+requests

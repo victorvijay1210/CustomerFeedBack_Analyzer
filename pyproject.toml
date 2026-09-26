@@ -1,0 +1,25 @@
+[project]
+name = "customerfeedback-analyzer"
+version = "0.1.0"
+description = "Customer feedback sentiment analyzer using Streamlit, FastAPI, Gemini, SQLite, and SQLAlchemy"
+readme = "README.md"
+authors = [
+    { name = "victorvijay1210", email = "70469583+victorvijay1210@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[standard]>=0.136.3",
+    "streamlit>=1.58.0",
+    "google-genai>=2.8.0",
+    "pydantic>=2.13.4",
+    "python-dotenv>=1.2",
+    "sqlalchemy>=2.0",
+    "requests>=2.34.2",
+]
+
+[project.scripts]
+customerfeedback-analyzer = "customerfeedback_analyzer:main"
+
+[build-system]
+requires = ["uv_build>=0.12.19,<0.13.0"]
+build-backend = "uv_build"
